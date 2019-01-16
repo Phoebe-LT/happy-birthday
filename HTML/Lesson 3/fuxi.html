@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			复习
+		</title>
+	</head>
+	<body>
+		<!-- 标题 -->
+		
+		<h1>哼，竟然考试</h1><br>
+		<!-- 无序列表 -->
+		<p>
+		<ul>
+			<li>不开心 不开心 不开心
+			</li>
+		</ul>
+		</p>
+		<!-- 有序列表 -->
+		<ol>
+			<li>唉 我能怎么办 还是得看老师
+			</li>
+		</ol>
+		<!-- 表格 -->
+		<table border="3px">
+			<tr>
+				<th>
+				刘浩真过分
+				</th>
+				<th>
+				刘浩特别过分
+				</th>
+				<th>
+				刘浩就是过分
+				</th>
+			</tr>
+			<tr>
+				<td>
+				学生也笨
+				</td>
+				<td>
+				不能只怪老师
+				</td>
+				<td>
+				嗯 我承认
+				</td>
+			</tr>
+		</table>
+		<!-- 表单 文本输入框 数字输入框 单选框 复选框-->
+		<form>
+			<label>
+			文本输入框
+			</label>
+			<input type="text" name="给老师认错">
+			<label>
+			数字输入框
+			</label>
+			<input type="number" name="老师，我错了">
+			<label>
+			单选框
+			</label>
+			<input type="radio" value="1" name="A"> 原谅
+			<input type="radio" value="2" name="A" checked > 不原谅
+			<label>
+			复选框
+			</label>
+			<!-- 
+			1. 同一组checkbox name 必须相同
+			2. name必须有[]
+			3. 多个单词组成的name使用下划线连接. 
+			-->
+			<input type="checkbox" value="1" name="I_want_to_sleep[]">
+			<input type="checkbox" value="2" name="I_want_to_sleep[]">
+			<input type="checkbox" value="3" name="I_want_to_sleep[]">
+			
+			<label>
+			范围选择器：
+			</label>
+			<input type="range" name="i_range" value="5">
+			
+			<label>
+			文本域
+			</label>
+			<textarea name="text_area" rows="10" cols="10">
+			记录
+			</textarea>
+			
+			<label>
+			下拉列表
+			</label>
+			<select name="i_select">
+				<optgroup label="1">
+					<option value="A">India</option>
+					<option value="B">brazil</option>
+				</optgroup>
+				<optgroup label="2">
+					<option value="C">ASEAN</option>
+					<option value="D">BR</option>
+				</optgroup>
+			<select>
+			
+			<input type="submit" value="提交">
+			<input type="reset" value="重置">
+			
+		</form>
+		
+		
+	</body>
+</html>

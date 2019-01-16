@@ -1,0 +1,55 @@
+<DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+		画布
+		</title>
+	</head>
+	<body> 
+		<canvas id="my_canvas"></canvas>
+		
+		<canvas id="fill_canvas"></canvas>
+		
+		<canvas id="linear_fill_canvas"></canvas>
+		
+	</body>
+</html>
+
+<script type="text/javascript">
+	//定位器概念 id定位器
+	
+	//变量 声明一个变量 var 变量名;
+	//变量命名规则：数字，字母，下划线的组合；数字不能开头,单词用下划线连接
+	//驼峰命名法（方法名）：第一个单子小写，之后的每一个单子首字母大写，
+	
+	//获取一个对象的属性或调用一个方法，用.连接
+	//获取一个元素对象
+	var my_canvas = document.getElementById("my_canvas");
+	
+	//获取一个2d context对象
+	var canvas = my_canvas.getContext("2d");
+	
+	
+	//canvas是变量 strokeStyle是变量的属性 =是赋值 red是值 
+	//值的类型，"red"字符串型 双引号或单引号括起来
+	canvas.strokeStyle="red";
+	//方框
+	canvas.strokeRect(15,15,90,90);
+	
+	var canvas_2 = document.getElementById("fill_canvas");
+	var canvas_3 = canvas_2.getContext("2d");
+	canvas_3.fillStyle = "brown";
+	canvas_3.fillRect(20,20,100,100);
+	
+	var linear_fill_canvas = document.getElementById("linear_fill_canvas");
+	var canvas_4 = linear_fill_canvas.getContext("2d");
+	var linear_gradient_object = canvas_4.createLinearGradient(40,0,80,0 );
+	    linear_gradient_object.addColorStop(0,"green");
+		linear_gradient_object.addColorStop(0.5,"purple");
+		linear_gradient_object.addColorStop(1,"skyblue");
+		
+		
+		canvas_4.fillStyle = linear_gradient_object;
+		canvas_4.fillRect(30,30,120,120);
+	
+</script>

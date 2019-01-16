@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+		鼠标
+		</title>
+		<meta charset="utf-8">
+		
+		<style>
+			div {
+				width :80px;
+				height :120px;
+			}
+			#mouse_click {
+				background :red;
+			}
+			
+			#mouse_double_click {
+				background :green;
+			}
+			
+			#mouse_down {
+				background :wheat;
+			}
+			
+			#mouse_up {
+				background :teal;
+			}
+			
+			#mouse_over {
+				background :silver;
+			}
+			
+			#mouse_out {
+				background :plum;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--鼠标单击-->
+		<label>
+		单击
+		<label>
+		<div id="mouse_click" onclick="alert('加油')">
+		</div>
+		
+		<!--鼠标双击-->
+		<label>
+		双击
+		</label>
+		<div id="mouse_double_click" ondblclick="alert('fighting')">
+		</div>
+		
+		<!--鼠标按下事件-->
+		<label>
+		鼠标按下事件
+		</label>
+		<div id="mouse_down" onmousedown="alert('别难为你自己了!')">
+		</div>
+		
+		<label>
+		释放
+		</label>
+		<div id="mouse_up" onmouseup="alert('浪里个浪！')">
+		</div>
+		
+		<label>
+		移入
+		</label>
+		<div id="mouse_over" onmouseover="alert('呼!')">
+		</div>
+		
+		<label>
+		移出
+		</label>
+		<div id="mouse_out" onmouseout="alert('哈哈哈哈!')">
+		</div>
+	</body>
+</html>

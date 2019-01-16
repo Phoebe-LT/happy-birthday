@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			表单
+		</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form onsubmit="console.log('交卷啦');return false;">
+		<label>
+			获取焦点
+		</label>
+		<input type="text" name="user_name" onfocus="console.log('刘老师从来不吃晚饭')"><br>
+		
+		<label>
+			失去焦点
+		</label>
+		<input type="text" name="password" onblur="console.log('谁造呢~')"><br>
+		
+		<label>
+			内容更改
+		</label>
+		<input type="text" name="change_content" onchange="console.log('学生也饿啊')"><br>
+		
+		<label>
+			内容选定
+		</label>
+		<input type="text" name="select_content" onselect="console.log('算了，说多了都是泪')"><br/>
+		
+		<input type="submit" value="提交">
+		</form>
+		</body>
+		
+</html>
